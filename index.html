@@ -11,6 +11,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <style>
+            input[type="range"] {
+  -webkit-appearance: none; /* Removes default styling */
+  width: 100%; /* Full width */
+  height: 8px; /* Track height */
+  /* background-color: #f0e68c; Custom track background color */
+  border-radius: 5px; /* Rounded track */
+  outline: none; /* Removes outline */
+}
+
+/* Custom thumb styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Removes default thumb styling */
+  appearance: none;
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background-color: #ffcc00;
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Pointer on hover */
+}
+
+/* Custom thumb for Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  /* background-color: #ffcc00; Thumb color */
+  border-radius: 50%; /* Rounded thumb */
+  cursor: pointer; /* Pointer on hover */
+}
+
+/* Custom track for Firefox */
+input[type="range"]::-moz-range-track {
+  background-color: #000000; 
+  border-radius: 5px; /* Rounded track */
+}
+
+        </style>
 </head>
 
 <body>
@@ -161,8 +198,8 @@
     <!-- course Curriculum  -->
     <section class="my-20 py-20 px-10 " style="background-color: var(--Eminence-100, rgba(249, 240, 252, 1));">
         <div>
-            <div class="flex flex-col items-center justify-center mx-20">
-                <button class="border border-rounded-full py-3 px-5 mb-10 text-sm" style="background:  var(--Eminence-100, rgba(249, 230, 252, 1));border-radius: 50px; color: var(--Eminence-700, rgba(153, 46, 157, 1));
+            <div class="flex flex-col items-center justify-center md:mx-20 mx-2">
+                <button class="border border-rounded-full py-3 md:px-5 px-1 mb-10 text-sm" style="background:  var(--Eminence-100, rgba(249, 230, 252, 1));border-radius: 50px; color: var(--Eminence-700, rgba(153, 46, 157, 1));
 "> DATASCIENCE COURSE LEARNING PATH</button>
                 <h2 class="text-3xl font-bold font-Poppins text-gray-700 mb-10"><span style="
 
@@ -237,10 +274,10 @@
         </div>
     </section>
     <!-- opportunity -->
-    <section class="mx-20">
-        <div class="w-2/3 flex items-center justify-center mx-auto">
-            <h2 class="text-6xl font-bold font-Poppins text-center tracking-tighter leading-tighter">Don't miss out on this <span
-                style="
+    <section class="md:mx-20 mx-2">
+        <div class="md:w-2/3 w-full flex items-center justify-center mx-auto">
+            <h2 class="md:text-6xl text-gra text-5xl font-bold font-Poppins md:text-center text-start tracking-tighter leading-tighter">Don't miss out on
+                this <span style="
 
                 background: linear-gradient(180deg, #B73BBE 0% 49.46%, #992E9D 93.51%);
                 -webkit-background-clip: text;
@@ -253,7 +290,39 @@
                     -webkit-text-fill-color: transparent;
                   ">Free! </span></h2>
         </div>
+        <!-- refund offer  -->
+        <div class="   mx-auto md:w-1/2 w-full rounded-3xl my-20 py-1 md:px-5 px-2" style="background: linear-gradient(180deg, #9849FF 0%, #841EE3 93.51%);
+">
+            <div>
+               <div class="flex items-center justify-center gap-5 ">
+                <h3 class=" text-center text-white font-Poppins font-bold text-lg my-1 me-10">100% Refund Offer 😎 </h3>
+                <img src="./images/snake.png" alt="" >
+               </div>
+             <div class="">
+                <h3 class="text-gray-400 text-sm font-Poppins my-1">20 Seats Left</h3>
+                <input type="range" class="w-full h-2 bg-yellow-500 accent-yellow-500 rounded-lg"
+                style="
+                --accent-color: #FFD700;
+                --thumb-size: 1.5rem;
+                --thumb-color: #FFD700;
+                
+                ">
+
+
+             </div>
+                <div class="flex items-center justify-center gap-2 mx-auto my-1 text-white font-medium font-Poppins text-md">
+                    <img src="./images/bx_time-five.png" alt="khdf" class="w-6 h-6">
+                    <p>Offer ends in 10:00Mins</p>
+                </div>
+            </div>
+        </div>
+        <!-- //how does it work -->
+        <section class="flex items-center justify-center ">
+<div><h2 class="text-4xl font-bold font-Poppins text-gray-800">How does it work?</h2></div>
+        </section>
+       
     </section>
+
 </body>
 
 </html>
